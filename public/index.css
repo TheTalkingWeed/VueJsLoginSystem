@@ -1,6 +1,7 @@
 body{
     height: 100vh;
     background: url('./forest.jpg');
+
     background-repeat: no-repeat;
     background-size:cover;
     overflow-x: hidden;
