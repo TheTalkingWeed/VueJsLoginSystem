@@ -16,37 +16,10 @@
 <script>
 import 'bootstrap/dist/css/bootstrap.css'
 import 'bootstrap-vue/dist/bootstrap-vue.css'
-import Swal from 'sweetalert2'
 
 export default {
   name: 'App',
 
-  methods:{
-
-    handlePassChange(data){
-      const foundUser = this.users.find(item => data === item.email);
-
-      console.log(foundUser)
-
-      typeof foundUser === 'undefined'?
-            Swal.fire({
-            icon: 'error',
-            title: 'Wrong email',
-            text: 'This email is not registered',
-            showConfirmButton: false,
-            timer: 1000
-           })
-           :
-         Swal.fire({
-            position: 'center',
-            icon: 'success',
-            title: 'Email was sent to you',
-            showConfirmButton: false,
-            timer: 1000
-          })
-
-    }, 
-  },
 }
 </script>
 
