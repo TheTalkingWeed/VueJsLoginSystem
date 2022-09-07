@@ -11,8 +11,6 @@
 
 <script>
 
-
-
 import InputField from '../components/InputField.vue'
 import Button from '../components/Button.vue'
 import Chekbox from '../components/Chekbox.vue'
@@ -26,7 +24,6 @@ export default {
     data(){
         return{
             users:[],
-            needInput:false,
             userinput:{
                     email: "",
                     password:""
@@ -64,6 +61,7 @@ export default {
             const res = await fetch("http://localhost:5000/users");
             const data = await res.json();
             return data
+
         },
 
         handleUserLogin(){
@@ -93,7 +91,7 @@ export default {
                     
                     this.deleteinput = !this.deleteinput,
                     this.checkBoxToFalse = !this.checkBoxToFalse,
-                    this.$router.push({name: 'Home'})
+                    this.$router.push({name: 'After_login'})
                 )
 
                 

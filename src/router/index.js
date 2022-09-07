@@ -3,31 +3,33 @@ import Home from '../views/Home.vue'
 import LoginCont from '../views/LoginCont.vue'
 import SignUpCont from '../views/SignUpCont.vue'
 import ForgotPassword from '../views/ForgotPassword.vue'
+import AfterLogin from '../views/AfterLogin.vue'
 
 const routes = [
   {
     path: '/home',
     name: 'Home',
-    component: Home,
-      
+    component: Home,  
   },
   {
     path: '/login',
     name: 'Login',
-    component: LoginCont,
-      
+    component: LoginCont, 
   },
   {
     path: '/signup',
     name: 'Sign_up',
-    component: SignUpCont,
-      
+    component: SignUpCont, 
   },
   {
     path: '/forgotpassword',
     name: 'Forgot_password',
-    component: ForgotPassword,
-      
+    component: ForgotPassword, 
+  },
+  {
+    path: '/afterlogin',
+    name: 'After_login',
+    component: AfterLogin,
   },
   
   
