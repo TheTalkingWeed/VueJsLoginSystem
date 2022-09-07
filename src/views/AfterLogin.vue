@@ -15,6 +15,6 @@
     .main-cont{
         width:200px;
         margin:auto;
-        background-color: red;
+        background-color: transparent;
     }
 </style>

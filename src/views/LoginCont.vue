@@ -119,7 +119,18 @@ export default {
         position: absolute;
         top:15%;
         left:50%;
+        animation-name: login-anim;
+        animation-duration: .3s;
         transform: translate(-50%, 0%);
+    }
+
+    @keyframes login-anim {
+        0%{
+            opacity: 0;
+        }
+        100%{
+            opacity: 1;
+        }
     }
 
     .login-cont h6{

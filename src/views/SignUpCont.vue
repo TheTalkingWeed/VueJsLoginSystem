@@ -210,7 +210,18 @@ export default {
         position: absolute;
         top:13%;
         left:50%;
+        animation-name: signup-anim;
+        animation-duration: .3s;
         transform: translate(-50%, 0%);
+    }
+
+    @keyframes signup-anim {
+        0%{
+            opacity: 0;
+        }
+        100%{
+            opacity: 1;
+        }
     }
 
     .signup-button{
